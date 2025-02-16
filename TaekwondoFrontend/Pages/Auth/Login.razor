@@ -1,0 +1,64 @@
+﻿@page "/Login"
+@using System.ComponentModel.DataAnnotations
+<h3>Login</h3>
+@if (!string.IsNullOrEmpty(loginError))
+{
+    <div class="alert alert-danger">
+        @loginError
+    </div>
+}
+<EditForm Model="loginModel" OnValidSubmit="HandleLogin">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+    <div class="form-group">
+        <label for="username">Username</label>
+        <InputText id="username" class="form-control" @bind-Value="loginModel.Username" />
+        <ValidationMessage For="@(() => loginModel.Username)" />
+    </div>
+    <div class="form-group">
+        <label for="password">Password</label>
+        <InputText type="password" id="password" class="form-control" @bind-Value="loginModel.Password" />
+        <ValidationMessage For="@(() => loginModel.Password)" />
+    </div>
+    <button type="submit" class="btn btn-primary">Login</button>
+</EditForm>
+
+@code {
+    private LoginModel loginModel = new();
+    private string? loginError;
+
+    [Inject]
+    private CustomAuthStateProvider AuthStateProvider { get; set; } = default!;
+
+    [Inject]
+    private NavigationManager NavigationManager { get; set; } = default!;
+
+    public class LoginModel
+    {
+        [Required(ErrorMessage = "Username is required")]
+        public string Username { get; set; } = string.Empty;
+
+        [Required(ErrorMessage = "Password is required")]
+        public string Password { get; set; } = string.Empty;
+    }
+
+    private async Task HandleLogin()
+    {
+        try
+        {
+            var result = await AuthStateProvider.LoginAsync(loginModel.Username, loginModel.Password);
+            if (result != null)
+            {
+                NavigationManager.NavigateTo("/dashboard");
+            }
+            else
+            {
+                loginError = "Invalid username or password";
+            }
+        }
+        catch (Exception ex)
+        {
+            loginError = ex.Message;
+        }
+    }
+}

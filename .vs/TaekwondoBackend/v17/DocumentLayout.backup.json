@@ -1,0 +1,455 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\MUHAMED\\source\\repos\\TaekwondoBackend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{42000EB2-6EA6-4889-B22E-02FA87D4CF65}|TaekwondoBackend\\TaekwondoBackend.csproj|c:\\users\\muhamed\\source\\repos\\taekwondobackend\\taekwondobackend\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{42000EB2-6EA6-4889-B22E-02FA87D4CF65}|TaekwondoBackend\\TaekwondoBackend.csproj|solutionrelative:taekwondobackend\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42000EB2-6EA6-4889-B22E-02FA87D4CF65}|TaekwondoBackend\\TaekwondoBackend.csproj|c:\\users\\muhamed\\source\\repos\\taekwondobackend\\taekwondobackend\\models\\membersdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42000EB2-6EA6-4889-B22E-02FA87D4CF65}|TaekwondoBackend\\TaekwondoBackend.csproj|solutionrelative:taekwondobackend\\models\\membersdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42000EB2-6EA6-4889-B22E-02FA87D4CF65}|TaekwondoBackend\\TaekwondoBackend.csproj|c:\\users\\muhamed\\source\\repos\\taekwondobackend\\taekwondobackend\\migrations\\20250208162423_members.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42000EB2-6EA6-4889-B22E-02FA87D4CF65}|TaekwondoBackend\\TaekwondoBackend.csproj|solutionrelative:taekwondobackend\\migrations\\20250208162423_members.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42000EB2-6EA6-4889-B22E-02FA87D4CF65}|TaekwondoBackend\\TaekwondoBackend.csproj|c:\\users\\muhamed\\source\\repos\\taekwondobackend\\taekwondobackend\\data\\taekwondodbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42000EB2-6EA6-4889-B22E-02FA87D4CF65}|TaekwondoBackend\\TaekwondoBackend.csproj|solutionrelative:taekwondobackend\\data\\taekwondodbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42000EB2-6EA6-4889-B22E-02FA87D4CF65}|TaekwondoBackend\\TaekwondoBackend.csproj|c:\\users\\muhamed\\source\\repos\\taekwondobackend\\taekwondobackend\\entities\\members.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42000EB2-6EA6-4889-B22E-02FA87D4CF65}|TaekwondoBackend\\TaekwondoBackend.csproj|solutionrelative:taekwondobackend\\entities\\members.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42000EB2-6EA6-4889-B22E-02FA87D4CF65}|TaekwondoBackend\\TaekwondoBackend.csproj|c:\\users\\muhamed\\source\\repos\\taekwondobackend\\taekwondobackend\\controllers\\memberscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42000EB2-6EA6-4889-B22E-02FA87D4CF65}|TaekwondoBackend\\TaekwondoBackend.csproj|solutionrelative:taekwondobackend\\controllers\\memberscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42000EB2-6EA6-4889-B22E-02FA87D4CF65}|TaekwondoBackend\\TaekwondoBackend.csproj|c:\\users\\muhamed\\source\\repos\\taekwondobackend\\taekwondobackend\\controllers\\beltscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42000EB2-6EA6-4889-B22E-02FA87D4CF65}|TaekwondoBackend\\TaekwondoBackend.csproj|solutionrelative:taekwondobackend\\controllers\\beltscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42000EB2-6EA6-4889-B22E-02FA87D4CF65}|TaekwondoBackend\\TaekwondoBackend.csproj|c:\\users\\muhamed\\source\\repos\\taekwondobackend\\taekwondobackend\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42000EB2-6EA6-4889-B22E-02FA87D4CF65}|TaekwondoBackend\\TaekwondoBackend.csproj|solutionrelative:taekwondobackend\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42000EB2-6EA6-4889-B22E-02FA87D4CF65}|TaekwondoBackend\\TaekwondoBackend.csproj|c:\\users\\muhamed\\source\\repos\\taekwondobackend\\taekwondobackend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{42000EB2-6EA6-4889-B22E-02FA87D4CF65}|TaekwondoBackend\\TaekwondoBackend.csproj|solutionrelative:taekwondobackend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42000EB2-6EA6-4889-B22E-02FA87D4CF65}|TaekwondoBackend\\TaekwondoBackend.csproj|c:\\users\\muhamed\\source\\repos\\taekwondobackend\\taekwondobackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42000EB2-6EA6-4889-B22E-02FA87D4CF65}|TaekwondoBackend\\TaekwondoBackend.csproj|solutionrelative:taekwondobackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42000EB2-6EA6-4889-B22E-02FA87D4CF65}|TaekwondoBackend\\TaekwondoBackend.csproj|c:\\users\\muhamed\\source\\repos\\taekwondobackend\\taekwondobackend\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42000EB2-6EA6-4889-B22E-02FA87D4CF65}|TaekwondoBackend\\TaekwondoBackend.csproj|solutionrelative:taekwondobackend\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42000EB2-6EA6-4889-B22E-02FA87D4CF65}|TaekwondoBackend\\TaekwondoBackend.csproj|c:\\users\\muhamed\\source\\repos\\taekwondobackend\\taekwondobackend\\migrations\\20250112222555_adduser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42000EB2-6EA6-4889-B22E-02FA87D4CF65}|TaekwondoBackend\\TaekwondoBackend.csproj|solutionrelative:taekwondobackend\\migrations\\20250112222555_adduser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42000EB2-6EA6-4889-B22E-02FA87D4CF65}|TaekwondoBackend\\TaekwondoBackend.csproj|c:\\users\\muhamed\\source\\repos\\taekwondobackend\\taekwondobackend\\migrations\\20250119165211_refreshtokens.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42000EB2-6EA6-4889-B22E-02FA87D4CF65}|TaekwondoBackend\\TaekwondoBackend.csproj|solutionrelative:taekwondobackend\\migrations\\20250119165211_refreshtokens.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42000EB2-6EA6-4889-B22E-02FA87D4CF65}|TaekwondoBackend\\TaekwondoBackend.csproj|c:\\users\\muhamed\\source\\repos\\taekwondobackend\\taekwondobackend\\models\\belts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42000EB2-6EA6-4889-B22E-02FA87D4CF65}|TaekwondoBackend\\TaekwondoBackend.csproj|solutionrelative:taekwondobackend\\models\\belts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42000EB2-6EA6-4889-B22E-02FA87D4CF65}|TaekwondoBackend\\TaekwondoBackend.csproj|c:\\users\\muhamed\\source\\repos\\taekwondobackend\\taekwondobackend\\models\\tokenresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42000EB2-6EA6-4889-B22E-02FA87D4CF65}|TaekwondoBackend\\TaekwondoBackend.csproj|solutionrelative:taekwondobackend\\models\\tokenresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42000EB2-6EA6-4889-B22E-02FA87D4CF65}|TaekwondoBackend\\TaekwondoBackend.csproj|c:\\users\\muhamed\\source\\repos\\taekwondobackend\\taekwondobackend\\models\\refreshtokenrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42000EB2-6EA6-4889-B22E-02FA87D4CF65}|TaekwondoBackend\\TaekwondoBackend.csproj|solutionrelative:taekwondobackend\\models\\refreshtokenrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42000EB2-6EA6-4889-B22E-02FA87D4CF65}|TaekwondoBackend\\TaekwondoBackend.csproj|c:\\users\\muhamed\\source\\repos\\taekwondobackend\\taekwondobackend\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42000EB2-6EA6-4889-B22E-02FA87D4CF65}|TaekwondoBackend\\TaekwondoBackend.csproj|solutionrelative:taekwondobackend\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42000EB2-6EA6-4889-B22E-02FA87D4CF65}|TaekwondoBackend\\TaekwondoBackend.csproj|c:\\users\\muhamed\\source\\repos\\taekwondobackend\\taekwondobackend\\models\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42000EB2-6EA6-4889-B22E-02FA87D4CF65}|TaekwondoBackend\\TaekwondoBackend.csproj|solutionrelative:taekwondobackend\\models\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42000EB2-6EA6-4889-B22E-02FA87D4CF65}|TaekwondoBackend\\TaekwondoBackend.csproj|c:\\users\\muhamed\\source\\repos\\taekwondobackend\\taekwondobackend\\services\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42000EB2-6EA6-4889-B22E-02FA87D4CF65}|TaekwondoBackend\\TaekwondoBackend.csproj|solutionrelative:taekwondobackend\\services\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42000EB2-6EA6-4889-B22E-02FA87D4CF65}|TaekwondoBackend\\TaekwondoBackend.csproj|c:\\users\\muhamed\\source\\repos\\taekwondobackend\\taekwondobackend\\migrations\\20250119160918_adduserrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42000EB2-6EA6-4889-B22E-02FA87D4CF65}|TaekwondoBackend\\TaekwondoBackend.csproj|solutionrelative:taekwondobackend\\migrations\\20250119160918_adduserrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42000EB2-6EA6-4889-B22E-02FA87D4CF65}|TaekwondoBackend\\TaekwondoBackend.csproj|c:\\users\\muhamed\\source\\repos\\taekwondobackend\\taekwondobackend\\migrations\\20250112135420_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42000EB2-6EA6-4889-B22E-02FA87D4CF65}|TaekwondoBackend\\TaekwondoBackend.csproj|solutionrelative:taekwondobackend\\migrations\\20250112135420_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42000EB2-6EA6-4889-B22E-02FA87D4CF65}|TaekwondoBackend\\TaekwondoBackend.csproj|c:\\users\\muhamed\\source\\repos\\taekwondobackend\\taekwondobackend\\migrations\\beltdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42000EB2-6EA6-4889-B22E-02FA87D4CF65}|TaekwondoBackend\\TaekwondoBackend.csproj|solutionrelative:taekwondobackend\\migrations\\beltdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42000EB2-6EA6-4889-B22E-02FA87D4CF65}|TaekwondoBackend\\TaekwondoBackend.csproj|c:\\users\\muhamed\\source\\repos\\taekwondobackend\\taekwondobackend\\migrations\\20250112192520_seedbelts.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42000EB2-6EA6-4889-B22E-02FA87D4CF65}|TaekwondoBackend\\TaekwondoBackend.csproj|solutionrelative:taekwondobackend\\migrations\\20250112192520_seedbelts.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42000EB2-6EA6-4889-B22E-02FA87D4CF65}|TaekwondoBackend\\TaekwondoBackend.csproj|c:\\users\\muhamed\\source\\repos\\taekwondobackend\\taekwondobackend\\migrations\\20250112135420_initial.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42000EB2-6EA6-4889-B22E-02FA87D4CF65}|TaekwondoBackend\\TaekwondoBackend.csproj|solutionrelative:taekwondobackend\\migrations\\20250112135420_initial.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42000EB2-6EA6-4889-B22E-02FA87D4CF65}|TaekwondoBackend\\TaekwondoBackend.csproj|c:\\users\\muhamed\\source\\repos\\taekwondobackend\\taekwondobackend\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{42000EB2-6EA6-4889-B22E-02FA87D4CF65}|TaekwondoBackend\\TaekwondoBackend.csproj|solutionrelative:taekwondobackend\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42000EB2-6EA6-4889-B22E-02FA87D4CF65}|TaekwondoBackend\\TaekwondoBackend.csproj|c:\\users\\muhamed\\source\\repos\\taekwondobackend\\taekwondobackend\\taekwondobackend.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{42000EB2-6EA6-4889-B22E-02FA87D4CF65}|TaekwondoBackend\\TaekwondoBackend.csproj|solutionrelative:taekwondobackend\\taekwondobackend.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42000EB2-6EA6-4889-B22E-02FA87D4CF65}|TaekwondoBackend\\TaekwondoBackend.csproj|c:\\users\\muhamed\\source\\repos\\taekwondobackend\\taekwondobackend\\migrations\\20250112192520_seedbelts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42000EB2-6EA6-4889-B22E-02FA87D4CF65}|TaekwondoBackend\\TaekwondoBackend.csproj|solutionrelative:taekwondobackend\\migrations\\20250112192520_seedbelts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "C:\\Users\\MUHAMED\\source\\repos\\TaekwondoBackend\\TaekwondoBackend\\Services\\IAuthService.cs",
+              "RelativeDocumentMoniker": "TaekwondoBackend\\Services\\IAuthService.cs",
+              "ToolTip": "C:\\Users\\MUHAMED\\source\\repos\\TaekwondoBackend\\TaekwondoBackend\\Services\\IAuthService.cs",
+              "RelativeToolTip": "TaekwondoBackend\\Services\\IAuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-12T22:29:55.588Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\Users\\MUHAMED\\source\\repos\\TaekwondoBackend\\TaekwondoBackend\\.gitignore",
+              "RelativeDocumentMoniker": "TaekwondoBackend\\.gitignore",
+              "ToolTip": "C:\\Users\\MUHAMED\\source\\repos\\TaekwondoBackend\\TaekwondoBackend\\.gitignore*",
+              "RelativeToolTip": "TaekwondoBackend\\.gitignore*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-02-16T17:51:12.386Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Members.cs",
+              "DocumentMoniker": "C:\\Users\\MUHAMED\\source\\repos\\TaekwondoBackend\\TaekwondoBackend\\Entities\\Members.cs",
+              "RelativeDocumentMoniker": "TaekwondoBackend\\Entities\\Members.cs",
+              "ToolTip": "C:\\Users\\MUHAMED\\source\\repos\\TaekwondoBackend\\TaekwondoBackend\\Entities\\Members.cs",
+              "RelativeToolTip": "TaekwondoBackend\\Entities\\Members.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T20:05:32.085Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MembersController.cs",
+              "DocumentMoniker": "C:\\Users\\MUHAMED\\source\\repos\\TaekwondoBackend\\TaekwondoBackend\\Controllers\\MembersController.cs",
+              "RelativeDocumentMoniker": "TaekwondoBackend\\Controllers\\MembersController.cs",
+              "ToolTip": "C:\\Users\\MUHAMED\\source\\repos\\TaekwondoBackend\\TaekwondoBackend\\Controllers\\MembersController.cs",
+              "RelativeToolTip": "TaekwondoBackend\\Controllers\\MembersController.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAA1wCIAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-08T16:34:49.01Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MembersDto.cs",
+              "DocumentMoniker": "C:\\Users\\MUHAMED\\source\\repos\\TaekwondoBackend\\TaekwondoBackend\\Models\\MembersDto.cs",
+              "RelativeDocumentMoniker": "TaekwondoBackend\\Models\\MembersDto.cs",
+              "ToolTip": "C:\\Users\\MUHAMED\\source\\repos\\TaekwondoBackend\\TaekwondoBackend\\Models\\MembersDto.cs",
+              "RelativeToolTip": "TaekwondoBackend\\Models\\MembersDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-08T16:12:54.765Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TaekwondoDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\MUHAMED\\source\\repos\\TaekwondoBackend\\TaekwondoBackend\\Data\\TaekwondoDbContext.cs",
+              "RelativeDocumentMoniker": "TaekwondoBackend\\Data\\TaekwondoDbContext.cs",
+              "ToolTip": "C:\\Users\\MUHAMED\\source\\repos\\TaekwondoBackend\\TaekwondoBackend\\Data\\TaekwondoDbContext.cs",
+              "RelativeToolTip": "TaekwondoBackend\\Data\\TaekwondoDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-12T13:30:31.255Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "20250208162423_members.cs",
+              "DocumentMoniker": "C:\\Users\\MUHAMED\\source\\repos\\TaekwondoBackend\\TaekwondoBackend\\Migrations\\20250208162423_members.cs",
+              "RelativeDocumentMoniker": "TaekwondoBackend\\Migrations\\20250208162423_members.cs",
+              "ToolTip": "C:\\Users\\MUHAMED\\source\\repos\\TaekwondoBackend\\TaekwondoBackend\\Migrations\\20250208162423_members.cs",
+              "RelativeToolTip": "TaekwondoBackend\\Migrations\\20250208162423_members.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABgAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-08T16:24:23.217Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\MUHAMED\\source\\repos\\TaekwondoBackend\\TaekwondoBackend\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "TaekwondoBackend\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\MUHAMED\\source\\repos\\TaekwondoBackend\\TaekwondoBackend\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "TaekwondoBackend\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAowDgAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-12T21:12:26.021Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\MUHAMED\\source\\repos\\TaekwondoBackend\\TaekwondoBackend\\appsettings.json",
+              "RelativeDocumentMoniker": "TaekwondoBackend\\appsettings.json",
+              "ToolTip": "C:\\Users\\MUHAMED\\source\\repos\\TaekwondoBackend\\TaekwondoBackend\\appsettings.json",
+              "RelativeToolTip": "TaekwondoBackend\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-12T13:39:42.945Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BeltsController.cs",
+              "DocumentMoniker": "C:\\Users\\MUHAMED\\source\\repos\\TaekwondoBackend\\TaekwondoBackend\\Controllers\\BeltsController.cs",
+              "RelativeDocumentMoniker": "TaekwondoBackend\\Controllers\\BeltsController.cs",
+              "ToolTip": "C:\\Users\\MUHAMED\\source\\repos\\TaekwondoBackend\\TaekwondoBackend\\Controllers\\BeltsController.cs",
+              "RelativeToolTip": "TaekwondoBackend\\Controllers\\BeltsController.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAA1wCAAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-08T20:04:18.102Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "TokenResponseDto.cs",
+              "DocumentMoniker": "C:\\Users\\MUHAMED\\source\\repos\\TaekwondoBackend\\TaekwondoBackend\\Models\\TokenResponseDto.cs",
+              "RelativeDocumentMoniker": "TaekwondoBackend\\Models\\TokenResponseDto.cs",
+              "ToolTip": "C:\\Users\\MUHAMED\\source\\repos\\TaekwondoBackend\\TaekwondoBackend\\Models\\TokenResponseDto.cs",
+              "RelativeToolTip": "TaekwondoBackend\\Models\\TokenResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-26T14:31:48.438Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "RefreshTokenRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\MUHAMED\\source\\repos\\TaekwondoBackend\\TaekwondoBackend\\Models\\RefreshTokenRequestDto.cs",
+              "RelativeDocumentMoniker": "TaekwondoBackend\\Models\\RefreshTokenRequestDto.cs",
+              "ToolTip": "C:\\Users\\MUHAMED\\source\\repos\\TaekwondoBackend\\TaekwondoBackend\\Models\\RefreshTokenRequestDto.cs",
+              "RelativeToolTip": "TaekwondoBackend\\Models\\RefreshTokenRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-26T14:31:50.266Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\MUHAMED\\source\\repos\\TaekwondoBackend\\TaekwondoBackend\\Program.cs",
+              "RelativeDocumentMoniker": "TaekwondoBackend\\Program.cs",
+              "ToolTip": "C:\\Users\\MUHAMED\\source\\repos\\TaekwondoBackend\\TaekwondoBackend\\Program.cs",
+              "RelativeToolTip": "TaekwondoBackend\\Program.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwBIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-08T19:49:34.919Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Belts.cs",
+              "DocumentMoniker": "C:\\Users\\MUHAMED\\source\\repos\\TaekwondoBackend\\TaekwondoBackend\\Models\\Belts.cs",
+              "RelativeDocumentMoniker": "TaekwondoBackend\\Models\\Belts.cs",
+              "ToolTip": "C:\\Users\\MUHAMED\\source\\repos\\TaekwondoBackend\\TaekwondoBackend\\Models\\Belts.cs",
+              "RelativeToolTip": "TaekwondoBackend\\Models\\Belts.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-08T19:55:01.183Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\MUHAMED\\source\\repos\\TaekwondoBackend\\TaekwondoBackend\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "TaekwondoBackend\\Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\MUHAMED\\source\\repos\\TaekwondoBackend\\TaekwondoBackend\\Services\\AuthService.cs",
+              "RelativeToolTip": "TaekwondoBackend\\Services\\AuthService.cs",
+              "ViewState": "AgIAAHYAAAAAAAAAAAAwwFkAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-12T22:30:11.337Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "20250119165211_refreshTokens.cs",
+              "DocumentMoniker": "C:\\Users\\MUHAMED\\source\\repos\\TaekwondoBackend\\TaekwondoBackend\\Migrations\\20250119165211_refreshTokens.cs",
+              "RelativeDocumentMoniker": "TaekwondoBackend\\Migrations\\20250119165211_refreshTokens.cs",
+              "ToolTip": "C:\\Users\\MUHAMED\\source\\repos\\TaekwondoBackend\\TaekwondoBackend\\Migrations\\20250119165211_refreshTokens.cs",
+              "RelativeToolTip": "TaekwondoBackend\\Migrations\\20250119165211_refreshTokens.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-19T16:52:12.201Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\MUHAMED\\source\\repos\\TaekwondoBackend\\TaekwondoBackend\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "TaekwondoBackend\\Entities\\User.cs",
+              "ToolTip": "C:\\Users\\MUHAMED\\source\\repos\\TaekwondoBackend\\TaekwondoBackend\\Entities\\User.cs",
+              "RelativeToolTip": "TaekwondoBackend\\Entities\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-12T21:10:11.662Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "UserDto.cs",
+              "DocumentMoniker": "C:\\Users\\MUHAMED\\source\\repos\\TaekwondoBackend\\TaekwondoBackend\\Models\\UserDto.cs",
+              "RelativeDocumentMoniker": "TaekwondoBackend\\Models\\UserDto.cs",
+              "ToolTip": "C:\\Users\\MUHAMED\\source\\repos\\TaekwondoBackend\\TaekwondoBackend\\Models\\UserDto.cs",
+              "RelativeToolTip": "TaekwondoBackend\\Models\\UserDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-12T21:04:55.417Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "20250112222555_AddUser.cs",
+              "DocumentMoniker": "C:\\Users\\MUHAMED\\source\\repos\\TaekwondoBackend\\TaekwondoBackend\\Migrations\\20250112222555_AddUser.cs",
+              "RelativeDocumentMoniker": "TaekwondoBackend\\Migrations\\20250112222555_AddUser.cs",
+              "ToolTip": "C:\\Users\\MUHAMED\\source\\repos\\TaekwondoBackend\\TaekwondoBackend\\Migrations\\20250112222555_AddUser.cs",
+              "RelativeToolTip": "TaekwondoBackend\\Migrations\\20250112222555_AddUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-12T22:25:55.949Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "20250119160918_addUserRole.cs",
+              "DocumentMoniker": "C:\\Users\\MUHAMED\\source\\repos\\TaekwondoBackend\\TaekwondoBackend\\Migrations\\20250119160918_addUserRole.cs",
+              "RelativeDocumentMoniker": "TaekwondoBackend\\Migrations\\20250119160918_addUserRole.cs",
+              "ToolTip": "C:\\Users\\MUHAMED\\source\\repos\\TaekwondoBackend\\TaekwondoBackend\\Migrations\\20250119160918_addUserRole.cs",
+              "RelativeToolTip": "TaekwondoBackend\\Migrations\\20250119160918_addUserRole.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-19T16:09:18.762Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "20250112135420_Initial.cs",
+              "DocumentMoniker": "C:\\Users\\MUHAMED\\source\\repos\\TaekwondoBackend\\TaekwondoBackend\\Migrations\\20250112135420_Initial.cs",
+              "RelativeDocumentMoniker": "TaekwondoBackend\\Migrations\\20250112135420_Initial.cs",
+              "ToolTip": "C:\\Users\\MUHAMED\\source\\repos\\TaekwondoBackend\\TaekwondoBackend\\Migrations\\20250112135420_Initial.cs",
+              "RelativeToolTip": "TaekwondoBackend\\Migrations\\20250112135420_Initial.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAIBJwBwAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-12T13:54:21.532Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "BeltDbContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\MUHAMED\\source\\repos\\TaekwondoBackend\\TaekwondoBackend\\Migrations\\BeltDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "TaekwondoBackend\\Migrations\\BeltDbContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\MUHAMED\\source\\repos\\TaekwondoBackend\\TaekwondoBackend\\Migrations\\BeltDbContextModelSnapshot.cs",
+              "RelativeToolTip": "TaekwondoBackend\\Migrations\\BeltDbContextModelSnapshot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAawAwAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-12T19:55:57.719Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "20250112192520_SeedBelts.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\MUHAMED\\source\\repos\\TaekwondoBackend\\TaekwondoBackend\\Migrations\\20250112192520_SeedBelts.Designer.cs",
+              "RelativeDocumentMoniker": "TaekwondoBackend\\Migrations\\20250112192520_SeedBelts.Designer.cs",
+              "ToolTip": "C:\\Users\\MUHAMED\\source\\repos\\TaekwondoBackend\\TaekwondoBackend\\Migrations\\20250112192520_SeedBelts.Designer.cs",
+              "RelativeToolTip": "TaekwondoBackend\\Migrations\\20250112192520_SeedBelts.Designer.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAawAwAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-12T19:55:49.845Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "20250112135420_Initial.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\MUHAMED\\source\\repos\\TaekwondoBackend\\TaekwondoBackend\\Migrations\\20250112135420_Initial.Designer.cs",
+              "RelativeDocumentMoniker": "TaekwondoBackend\\Migrations\\20250112135420_Initial.Designer.cs",
+              "ToolTip": "C:\\Users\\MUHAMED\\source\\repos\\TaekwondoBackend\\TaekwondoBackend\\Migrations\\20250112135420_Initial.Designer.cs",
+              "RelativeToolTip": "TaekwondoBackend\\Migrations\\20250112135420_Initial.Designer.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAawAwAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-12T19:55:41.817Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "20250112192520_SeedBelts.cs",
+              "DocumentMoniker": "C:\\Users\\MUHAMED\\source\\repos\\TaekwondoBackend\\TaekwondoBackend\\Migrations\\20250112192520_SeedBelts.cs",
+              "RelativeDocumentMoniker": "TaekwondoBackend\\Migrations\\20250112192520_SeedBelts.cs",
+              "ToolTip": "C:\\Users\\MUHAMED\\source\\repos\\TaekwondoBackend\\TaekwondoBackend\\Migrations\\20250112192520_SeedBelts.cs",
+              "RelativeToolTip": "TaekwondoBackend\\Migrations\\20250112192520_SeedBelts.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAIBZwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-12T19:25:20.992Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\MUHAMED\\source\\repos\\TaekwondoBackend\\TaekwondoBackend\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "TaekwondoBackend\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\MUHAMED\\source\\repos\\TaekwondoBackend\\TaekwondoBackend\\Properties\\launchSettings.json",
+              "RelativeToolTip": "TaekwondoBackend\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-08T19:43:04.585Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "TaekwondoBackend.http",
+              "DocumentMoniker": "C:\\Users\\MUHAMED\\source\\repos\\TaekwondoBackend\\TaekwondoBackend\\TaekwondoBackend.http",
+              "RelativeDocumentMoniker": "TaekwondoBackend\\TaekwondoBackend.http",
+              "ToolTip": "C:\\Users\\MUHAMED\\source\\repos\\TaekwondoBackend\\TaekwondoBackend\\TaekwondoBackend.http",
+              "RelativeToolTip": "TaekwondoBackend\\TaekwondoBackend.http",
+              "ViewState": "AgIAAAAAAABAQR3UQR0MwAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-01-08T19:35:02.215Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

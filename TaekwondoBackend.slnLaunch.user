@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "TaekwondoBackend\\TaekwondoBackend.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "TakwondoFrontend\\TakwondoFrontend.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]
