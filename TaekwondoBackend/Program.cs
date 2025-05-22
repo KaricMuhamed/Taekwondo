@@ -54,8 +54,9 @@ builder.Services.AddCors(options =>
                 "http://localhost:3000",    // React default
                 "http://localhost:8080",    // Vue default  
                 "http://localhost:4200",    // Angular default
-                "http://localhost:5173",    // Vite default
-                "http://localhost:8000"     // Other common ports
+                "http://localhost:5298",    // Vite default
+                "http://localhost:8000",     // Other common ports
+                "https://keen-novel-viper.ngrok-free.app/"
             )
             .AllowAnyMethod()               // GET, POST, PUT, DELETE, etc.
             .AllowAnyHeader()               // Authorization, Content-Type, etc.
@@ -99,6 +100,15 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 
 var app = builder.Build();
 
+app.Use(async (context, next) =>
+{
+    context.Request.Headers.Remove("ngrok-skip-browser-warning");
+    await next();
+});
+
+app.UseDefaultFiles(); // Serves index.html by default
+app.UseStaticFiles();  // Serves static files from wwwroot
+
 // Configure the HTTP request pipeline
 if (app.Environment.IsDevelopment())
 {
@@ -115,5 +125,8 @@ app.UseCors("AllowFrontend");
 app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();
+
+// Fallback for client-side routing
+app.MapFallbackToFile("index.html");
 
 app.Run();
