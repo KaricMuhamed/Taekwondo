@@ -44,6 +44,25 @@ builder.Services.AddOpenApi(options =>
         return Task.CompletedTask;
     });
 });
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowFrontend", policy =>
+    {
+        policy
+            .WithOrigins(
+                "http://localhost:3000",    // React default
+                "http://localhost:8080",    // Vue default  
+                "http://localhost:4200",    // Angular default
+                "http://localhost:5173",    // Vite default
+                "http://localhost:8000"     // Other common ports
+            )
+            .AllowAnyMethod()               // GET, POST, PUT, DELETE, etc.
+            .AllowAnyHeader()               // Authorization, Content-Type, etc.
+            .AllowCredentials();            // Cookies, auth headers
+    });
+});
+
 // Add DbContext
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
@@ -91,6 +110,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+// IMPORTANT: CORS must be before Authentication/Authorization
+app.UseCors("AllowFrontend");
 app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();
