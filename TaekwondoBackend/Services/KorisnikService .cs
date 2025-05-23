@@ -279,7 +279,7 @@ namespace TaekwondoBackend.Services
 
                 return result;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 // Log the exception in production
                 return new LoginResponseDto

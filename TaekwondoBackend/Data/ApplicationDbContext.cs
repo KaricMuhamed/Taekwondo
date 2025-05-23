@@ -12,9 +12,16 @@ namespace TaekwondoBackend.Data
 
         public DbSet<Korisnik> Korisnici { get; set; }
         public DbSet<Objava> Objave { get; set; }
+        public DbSet<Grupa> Grupe { get; set; }
+        public DbSet<Trening> Treninzi { get; set; }
+        public DbSet<GrupaUcenik> GrupaUcenici { get; set; }
+        public DbSet<TreningTrener> TreningTreneri { get; set; }
+        public DbSet<TreningGrupa> TreningGrupe { get; set; }
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.HasDefaultSchema("public");
             base.OnModelCreating(modelBuilder);
 
             // Configure Korisnik entity
@@ -38,6 +45,22 @@ namespace TaekwondoBackend.Data
                     "'crni_6_dan', 'crni_7_dan', 'crni_8_dan', 'crni_9_dan', 'crni_10_dan')");
             });
 
+            // Seed with administrator user
+            modelBuilder.Entity<Korisnik>().HasData(new Korisnik
+            {
+                Id = new Guid("00000000-0000-0000-0000-000000000001"),
+                Ime = "Admin",
+                Email = "admin@admin.com",
+                PasswordHash = "$2a$12$SQbY2HKI4X/1ytaMCHSGcOWVr7pWZ128jgdwhNRh41vZ7w67bhcNO",
+                Uloga = "administrator",
+                Stanje = "aktivan",
+                Pojas = "crni_1_dan",
+                CreatedAt = new DateTime(2024, 1, 1, 0, 0, 0, DateTimeKind.Utc),
+                UpdatedAt = new DateTime(2024, 1, 1, 0, 0, 0, DateTimeKind.Utc),
+                DatumPridruzivanja = new DateTime(2024, 1, 1, 0, 0, 0, DateTimeKind.Utc),
+                Napomene = "Administrator user",
+                Telefon = "+38761234567"
+            });
             // Configure Objava entity
             modelBuilder.Entity<Objava>(entity =>
             {
@@ -51,6 +74,67 @@ namespace TaekwondoBackend.Data
                       .WithMany(k => k.AutorObjave)
                       .HasForeignKey(o => o.AutorId)
                       .OnDelete(DeleteBehavior.Restrict);
+            });
+
+            // Configure Grupa entity
+            modelBuilder.Entity<Grupa>(entity =>
+            {
+                entity.HasIndex(e => e.Naziv);
+            });
+
+            // Configure Trening entity
+            modelBuilder.Entity<Trening>(entity =>
+            {
+                entity.HasIndex(e => e.Datum);
+                entity.HasIndex(e => e.Naziv);
+            });
+
+            // Configure GrupaUcenik junction table
+            modelBuilder.Entity<GrupaUcenik>(entity =>
+            {
+                entity.HasIndex(e => new { e.GrupaId, e.UcenikId }).IsUnique();
+
+                entity.HasOne(gu => gu.Grupa)
+                    .WithMany(g => g.GrupaUcenici)
+                    .HasForeignKey(gu => gu.GrupaId)
+                    .OnDelete(DeleteBehavior.Cascade);
+
+                entity.HasOne(gu => gu.Ucenik)
+                    .WithMany()
+                    .HasForeignKey(gu => gu.UcenikId)
+                    .OnDelete(DeleteBehavior.Restrict);
+            });
+
+            // Configure TreningTrener junction table
+            modelBuilder.Entity<TreningTrener>(entity =>
+            {
+                entity.HasIndex(e => new { e.TreningId, e.TrenerId }).IsUnique();
+
+                entity.HasOne(tt => tt.Trening)
+                    .WithMany(t => t.TreningTreneri)
+                    .HasForeignKey(tt => tt.TreningId)
+                    .OnDelete(DeleteBehavior.Cascade);
+
+                entity.HasOne(tt => tt.Trener)
+                    .WithMany()
+                    .HasForeignKey(tt => tt.TrenerId)
+                    .OnDelete(DeleteBehavior.Restrict);
+            });
+
+            // Configure TreningGrupa junction table
+            modelBuilder.Entity<TreningGrupa>(entity =>
+            {
+                entity.HasIndex(e => new { e.TreningId, e.GrupaId }).IsUnique();
+
+                entity.HasOne(tg => tg.Trening)
+                    .WithMany(t => t.TreningGrupe)
+                    .HasForeignKey(tg => tg.TreningId)
+                    .OnDelete(DeleteBehavior.Cascade);
+
+                entity.HasOne(tg => tg.Grupa)
+                    .WithMany(g => g.TreningGrupe)
+                    .HasForeignKey(tg => tg.GrupaId)
+                    .OnDelete(DeleteBehavior.Restrict);
             });
         }
     }

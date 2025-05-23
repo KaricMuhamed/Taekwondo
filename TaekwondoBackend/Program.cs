@@ -80,6 +80,8 @@ builder.Services.AddScoped<IJwtService, JwtService>();
 // Register your services
 builder.Services.AddScoped<IKorisnikService, KorisnikService>();
 builder.Services.AddScoped<IObjavaService, ObjavaService>();
+builder.Services.AddScoped<IGrupaService, GrupaService>();       
+builder.Services.AddScoped<ITreningService, TreningService>();
 
 // JWT Authentication
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)

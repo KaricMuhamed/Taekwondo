@@ -27,7 +27,7 @@ namespace TaekwondoBackend.Controllers
                 var objave = await _objavaService.GetAllAsync();
                 return Ok(objave);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return StatusCode(500, new { message = "Greska prilikom dohvatanja objava." });
             }
@@ -45,7 +45,7 @@ namespace TaekwondoBackend.Controllers
 
                 return Ok(objava);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return StatusCode(500, new { message = "Greska prilikom dohvatanja objave." });
             }
@@ -60,7 +60,7 @@ namespace TaekwondoBackend.Controllers
                 var objave = await _objavaService.GetByAutorAsync(autorId);
                 return Ok(objave);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return StatusCode(500, new { message = "Greska prilikom dohvatanja objava." });
             }
@@ -75,7 +75,7 @@ namespace TaekwondoBackend.Controllers
                 var objave = await _objavaService.GetByTipAsync(tip);
                 return Ok(objave);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return StatusCode(500, new { message = "Greska prilikom dohvatanja objava." });
             }
@@ -102,7 +102,7 @@ namespace TaekwondoBackend.Controllers
                 var objava = await _objavaService.CreateAsync(dto);
                 return CreatedAtAction(nameof(GetObjava), new { id = objava.Id }, objava);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return StatusCode(500, new { message = "Greska prilikom kreiranja objave." });
             }
@@ -135,7 +135,7 @@ namespace TaekwondoBackend.Controllers
                 var objava = await _objavaService.UpdateAsync(id, dto);
                 return Ok(objava);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return StatusCode(500, new { message = "Greska prilikom azuriranja objave." });
             }
@@ -165,7 +165,7 @@ namespace TaekwondoBackend.Controllers
                 var result = await _objavaService.DeleteAsync(id);
                 return NoContent();
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return StatusCode(500, new { message = "Greska prilikom brisanja objave." });
             }
@@ -184,7 +184,7 @@ namespace TaekwondoBackend.Controllers
                 var objave = await _objavaService.GetByAutorAsync(Guid.Parse(currentUserId));
                 return Ok(objave);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return StatusCode(500, new { message = "Greska prilikom dohvatanja objava." });
             }
