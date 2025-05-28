@@ -4,7 +4,9 @@ using Microsoft.IdentityModel.Tokens;
 using Scalar.AspNetCore;
 using System.Text;
 using TaekwondoBackend.Data;
-using TaekwondoBackend.Services;
+using TaekwondoBackend.Repositories.Member;
+using TaekwondoBackend.Services.Auth;
+using TaekwondoBackend.Services.Member;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,6 +20,10 @@ builder.Services.AddDbContext<TaekwondoDbContext>(options =>
 
 // Authentication Services
 builder.Services.AddScoped<IAuthService, AuthService>();
+
+builder.Services.AddScoped<IMemberRepository, MemberRepository>();
+builder.Services.AddScoped<IMemberService, MemberService>();
+
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
     {

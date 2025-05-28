@@ -10,7 +10,7 @@ using TaekwondoBackend.Data;
 using TaekwondoBackend.Entities;
 using TaekwondoBackend.Models;
 
-namespace TaekwondoBackend.Services
+namespace TaekwondoBackend.Services.Auth
 {
     public class AuthService(TaekwondoDbContext context, IConfiguration configuration) : IAuthService
     {

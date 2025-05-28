@@ -8,7 +8,7 @@ using System.Security.Claims;
 using System.Text;
 using TaekwondoBackend.Entities;
 using TaekwondoBackend.Models;
-using TaekwondoBackend.Services;
+using TaekwondoBackend.Services.Auth;
 
 namespace TaekwondoBackend.Controllers
 {

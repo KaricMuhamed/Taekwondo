@@ -22,6 +22,259 @@ namespace TaekwondoBackend.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("TaekwondoBackend.Entities.BeltTest", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("AppliedBeltId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("CurrentBeltId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("MemberId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Notes")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("ScheduledDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("TestedDate")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AppliedBeltId");
+
+                    b.HasIndex("CurrentBeltId");
+
+                    b.HasIndex("MemberId");
+
+                    b.ToTable("BeltTests");
+                });
+
+            modelBuilder.Entity("TaekwondoBackend.Entities.Group", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Groups");
+                });
+
+            modelBuilder.Entity("TaekwondoBackend.Entities.GroupMember", b =>
+                {
+                    b.Property<int>("GroupId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("MemberId")
+                        .HasColumnType("int");
+
+                    b.HasKey("GroupId", "MemberId");
+
+                    b.HasIndex("MemberId");
+
+                    b.ToTable("GroupMembers");
+                });
+
+            modelBuilder.Entity("TaekwondoBackend.Entities.Members", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Adresse")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("BirthDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("ContactNumber")
+                        .HasColumnType("int");
+
+                    b.Property<int>("CurrentBeltId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("DateOfJoining")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Surname")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Members");
+                });
+
+            modelBuilder.Entity("TaekwondoBackend.Entities.Post", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Content")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("ImageUrl")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsVisible")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Posts");
+                });
+
+            modelBuilder.Entity("TaekwondoBackend.Entities.Tournament", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("EndDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int?>("GroupId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Location")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("StartDate")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("GroupId");
+
+                    b.ToTable("Tournaments");
+                });
+
+            modelBuilder.Entity("TaekwondoBackend.Entities.TournamentMember", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("MemberId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TournamentId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("MemberId");
+
+                    b.HasIndex("TournamentId");
+
+                    b.ToTable("TournamentMembers");
+                });
+
+            modelBuilder.Entity("TaekwondoBackend.Entities.TrainingSession", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("GroupId")
+                        .HasColumnType("int");
+
+                    b.Property<Guid>("InstructorId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Location")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("GroupId");
+
+                    b.HasIndex("InstructorId");
+
+                    b.ToTable("TrainingSessions");
+                });
+
+            modelBuilder.Entity("TaekwondoBackend.Entities.TrainingSessionMember", b =>
+                {
+                    b.Property<int>("TrainingSessionId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("MemberId")
+                        .HasColumnType("int");
+
+                    b.HasKey("TrainingSessionId", "MemberId");
+
+                    b.HasIndex("MemberId");
+
+                    b.ToTable("TrainingSessionMembers");
+                });
+
             modelBuilder.Entity("TaekwondoBackend.Entities.User", b =>
                 {
                     b.Property<Guid>("Id")
@@ -53,6 +306,24 @@ namespace TaekwondoBackend.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("TaekwondoBackend.Entities.UserMember", b =>
+                {
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("MemberId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Type")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("UserId", "MemberId");
+
+                    b.HasIndex("MemberId");
+
+                    b.ToTable("UserMembers");
                 });
 
             modelBuilder.Entity("TaekwondoBackend.Models.Belts", b =>
@@ -113,41 +384,172 @@ namespace TaekwondoBackend.Migrations
                         });
                 });
 
-            modelBuilder.Entity("TaekwondoBackend.Models.Members", b =>
+            modelBuilder.Entity("TaekwondoBackend.Entities.BeltTest", b =>
                 {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                    b.HasOne("TaekwondoBackend.Models.Belts", "AppliedBelt")
+                        .WithMany()
+                        .HasForeignKey("AppliedBeltId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                    b.HasOne("TaekwondoBackend.Models.Belts", "CurrentBelt")
+                        .WithMany()
+                        .HasForeignKey("CurrentBeltId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
 
-                    b.Property<string>("Adresse")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.HasOne("TaekwondoBackend.Entities.Members", "Member")
+                        .WithMany()
+                        .HasForeignKey("MemberId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-                    b.Property<DateOnly>("BirthDate")
-                        .HasColumnType("date");
+                    b.Navigation("AppliedBelt");
 
-                    b.Property<int>("ContactNumber")
-                        .HasColumnType("int");
+                    b.Navigation("CurrentBelt");
 
-                    b.Property<int>("CurrentBeltId")
-                        .HasColumnType("int");
+                    b.Navigation("Member");
+                });
 
-                    b.Property<DateOnly>("DateOfJoining")
-                        .HasColumnType("date");
+            modelBuilder.Entity("TaekwondoBackend.Entities.GroupMember", b =>
+                {
+                    b.HasOne("TaekwondoBackend.Entities.Group", "Group")
+                        .WithMany("GroupMembers")
+                        .HasForeignKey("GroupId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.HasOne("TaekwondoBackend.Entities.Members", "Member")
+                        .WithMany()
+                        .HasForeignKey("MemberId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-                    b.Property<string>("Surname")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Navigation("Group");
 
-                    b.HasKey("Id");
+                    b.Navigation("Member");
+                });
 
-                    b.ToTable("Members");
+            modelBuilder.Entity("TaekwondoBackend.Entities.Post", b =>
+                {
+                    b.HasOne("TaekwondoBackend.Entities.User", "User")
+                        .WithMany("Posts")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("TaekwondoBackend.Entities.Tournament", b =>
+                {
+                    b.HasOne("TaekwondoBackend.Entities.Group", "Group")
+                        .WithMany()
+                        .HasForeignKey("GroupId");
+
+                    b.Navigation("Group");
+                });
+
+            modelBuilder.Entity("TaekwondoBackend.Entities.TournamentMember", b =>
+                {
+                    b.HasOne("TaekwondoBackend.Entities.Members", "Member")
+                        .WithMany()
+                        .HasForeignKey("MemberId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("TaekwondoBackend.Entities.Tournament", "Tournament")
+                        .WithMany("TournamentMembers")
+                        .HasForeignKey("TournamentId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Member");
+
+                    b.Navigation("Tournament");
+                });
+
+            modelBuilder.Entity("TaekwondoBackend.Entities.TrainingSession", b =>
+                {
+                    b.HasOne("TaekwondoBackend.Entities.Group", "Group")
+                        .WithMany()
+                        .HasForeignKey("GroupId")
+                        .OnDelete(DeleteBehavior.SetNull);
+
+                    b.HasOne("TaekwondoBackend.Entities.User", "Instructor")
+                        .WithMany()
+                        .HasForeignKey("InstructorId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Group");
+
+                    b.Navigation("Instructor");
+                });
+
+            modelBuilder.Entity("TaekwondoBackend.Entities.TrainingSessionMember", b =>
+                {
+                    b.HasOne("TaekwondoBackend.Entities.Members", "Member")
+                        .WithMany()
+                        .HasForeignKey("MemberId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("TaekwondoBackend.Entities.TrainingSession", "TrainingSession")
+                        .WithMany("TrainingSessionMembers")
+                        .HasForeignKey("TrainingSessionId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Member");
+
+                    b.Navigation("TrainingSession");
+                });
+
+            modelBuilder.Entity("TaekwondoBackend.Entities.UserMember", b =>
+                {
+                    b.HasOne("TaekwondoBackend.Entities.Members", "Member")
+                        .WithMany("UserMembers")
+                        .HasForeignKey("MemberId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("TaekwondoBackend.Entities.User", "User")
+                        .WithMany("UserMembers")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Member");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("TaekwondoBackend.Entities.Group", b =>
+                {
+                    b.Navigation("GroupMembers");
+                });
+
+            modelBuilder.Entity("TaekwondoBackend.Entities.Members", b =>
+                {
+                    b.Navigation("UserMembers");
+                });
+
+            modelBuilder.Entity("TaekwondoBackend.Entities.Tournament", b =>
+                {
+                    b.Navigation("TournamentMembers");
+                });
+
+            modelBuilder.Entity("TaekwondoBackend.Entities.TrainingSession", b =>
+                {
+                    b.Navigation("TrainingSessionMembers");
+                });
+
+            modelBuilder.Entity("TaekwondoBackend.Entities.User", b =>
+                {
+                    b.Navigation("Posts");
+
+                    b.Navigation("UserMembers");
                 });
 #pragma warning restore 612, 618
         }

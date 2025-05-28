@@ -9,5 +9,9 @@
         public string Email {  get; set; } = string.Empty;
         public string? RefreshToken { get; set; }
         public DateTime? RefreshTokenExpiryTime { get; set; }
+
+        public ICollection<UserMember>? UserMembers { get; set; }
+        public ICollection<Post> Posts { get; set; } = new List<Post>();
+
     }
 }

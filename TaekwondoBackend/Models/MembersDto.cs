@@ -10,5 +10,6 @@
         public string Adresse { get; set; }
         public DateTime DateOfJoining { get; set; }
         public int CurrentBeltId { get; set; }
+        public required List<Guid> UserIds { get; set; } 
     }
 }

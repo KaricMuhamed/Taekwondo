@@ -1,80 +1,62 @@
-﻿using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
+﻿using System.Collections.Generic;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using TaekwondoBackend.Data;
+using TaekwondoBackend.Entities;
 using TaekwondoBackend.Models;
+using TaekwondoBackend.Services.Member;
 
 namespace TaekwondoBackend.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class MembersController(TaekwondoDbContext context) : ControllerBase
+    public class MembersController : ControllerBase
     {
-        private readonly TaekwondoDbContext _context = context;
+        private readonly IMemberService _service;
 
-        [HttpGet]
-        public async Task<ActionResult<List<MembersDto>>> GetMembers()
+        public MembersController(IMemberService service)
         {
-            return Ok(await _context.Members.ToListAsync());
+            _service = service;
         }
+
+        [Authorize(Roles = "Admin, Trainer, Parent")]
+        [HttpGet]
+        public async Task<ActionResult<List<MembersDto>>> Get()
+            => Ok(await _service.GetAllAsync());
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<MembersDto>> GetMembersByIdAsync(int id)
+        public async Task<ActionResult<MembersDto>> Get(int id)
         {
-            var member = await _context.Members.FindAsync(id);
-
-            if (member == null)
-                return NotFound();
-
-            return Ok(member);
+            var dto = await _service.GetByIdAsync(id);
+            if (dto == null) return NotFound();
+            return Ok(dto);
         }
 
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "Admin, Trainer")]
         [HttpPost]
-        public async Task<ActionResult<MembersDto>> AddMember(MembersDto newMember)
+        public async Task<ActionResult<MembersDto>> Post([FromBody] MembersDto dto)
         {
-            if (newMember == null)
-                return BadRequest();
-
-            _context.Members.Add(newMember);
-            await _context.SaveChangesAsync();
-
-            return CreatedAtAction( 
-                nameof(GetMembersByIdAsync),
-                new { id = newMember.Id },
-                newMember
-                );
+            if (dto == null) return BadRequest();
+            var created = await _service.CreateAsync(dto);
+            return CreatedAtAction(nameof(Get), new { id = created.Id }, created);
         }
 
+        [Authorize(Roles = "Admin, Trainer")]
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateMember(int id, MembersDto updatedMember)
+        public async Task<IActionResult> Put(int id, [FromBody] MembersDto dto)
         {
-            var member = await _context.Members.FindAsync(id);
-
-            if (member == null)
+            if (!await _service.UpdateAsync(id, dto))
                 return NotFound();
-
-            member.Name = member.Name;
-
-            await _context.SaveChangesAsync();
-
-            return NoContent();
-
+            return Ok();
         }
 
+        [Authorize(Roles = "Admin, Trainer")]
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteMemberAsync(int id)
+        public async Task<IActionResult> Delete(int id)
         {
-            var member = await _context.Members.FindAsync(id);
-            if (member == null)
+            if (!await _service.DeleteAsync(id))
                 return NotFound();
-
-            _context.Members.Remove(member);
-
-            await _context.SaveChangesAsync();
-
-            return NoContent();
+            return Ok();
         }
     }
 }

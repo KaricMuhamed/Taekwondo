@@ -1,7 +1,7 @@
 ﻿using TaekwondoBackend.Entities;
 using TaekwondoBackend.Models;
 
-namespace TaekwondoBackend.Services
+namespace TaekwondoBackend.Services.Auth
 {
     public interface IAuthService
     {
