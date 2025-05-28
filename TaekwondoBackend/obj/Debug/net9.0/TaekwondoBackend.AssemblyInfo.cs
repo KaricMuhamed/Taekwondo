@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TaekwondoBackend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dd0d7a73d557f3bbfa96aada6998d18ad8b7fa38")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+db2af802b037edfeda1166f4c9150b8f20544aeb")]
 [assembly: System.Reflection.AssemblyProductAttribute("TaekwondoBackend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TaekwondoBackend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -19,6 +19,7 @@ namespace TaekwondoBackend.Data
         public DbSet<TournamentMember> TournamentMembers { get; set; }
         public DbSet<BeltTest> BeltTests { get; set; }
         public DbSet<Post> Posts { get; set; }
+        public DbSet<Payment> Payments { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
