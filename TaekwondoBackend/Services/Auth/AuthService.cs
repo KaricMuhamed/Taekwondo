@@ -134,5 +134,18 @@ namespace TaekwondoBackend.Services.Auth
 
             return new JwtSecurityTokenHandler().WriteToken(tokenDescriptor);
         }
+
+        public async Task<List<UserDto>> GetAllUsers()
+        {
+            return await context.Users
+                .Select(u => new UserDto
+                {
+                    Username = u.Username,
+                    MemberIds = u.UserMembers != null
+                        ? u.UserMembers.Select(um => um.MemberId).ToList()
+                        : new List<int>()
+                })
+                .ToListAsync(); 
+        }
     }
 }

@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
+using System.ComponentModel;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
@@ -60,6 +61,12 @@ namespace TaekwondoBackend.Controllers
         public IActionResult AdminOnlyEndpoint()
         {
             return Ok("You are admin");
+        }
+
+        [HttpPost("get-all-users")]
+        public async Task<List<UserDto>> GetAllUsers()
+        {
+            return await authService.GetAllUsers();
         }
 
     }
